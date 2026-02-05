@@ -1,46 +1,64 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="\Css\Home.css" />
-  </head>
-  <body>
-    <header>
-      <nav id="navbar">
-        <div class="nav-items" id="nav-item-1">
-          <div class="nav-logo-div">
-            <a id="nav-logo-link" href="/">
-              <img
-                id="nav-logo"
-                src="https://itembase.com/wp-content/uploads/2023/02/279-200px600px-Color.png"
-                alt=""
-              />
-            </a>
-          </div>
-          <div class="nav-search-div">
-            <form class="search-form" action="" method="get">
-              <input
-                type="search"
-                name=""
-                id=""
-                placeholder="Search for Products, Brands and More"
-              />
-              <button class="nav-search-btn" type="submit">
-                <img src="\Icons\search.png" alt="" srcset="" />
-              </button>
-            </form>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="\Css\Home.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <nav id="navbar">
+      <div class="nav-items" id="nav-item-1">
+        <div class="nav-logo-div">
+          <a id="nav-logo-link" href="/">
+            <img id="nav-logo" src="https://itembase.com/wp-content/uploads/2023/02/279-200px600px-Color.png" alt="" />
+          </a>
         </div>
-        <div class="nav-items" id="nav-item-2">
-          <div id="login-div">
-            <a href="">Login</a>
-          </div>
-          <div></div>
-          <div></div>
+        <div class="nav-search-div">
+          <form class="search-form" action="" method="get">
+            <input type="search" name="" id="" placeholder="Search for Products, Brands and More" />
+            <button class="nav-search-btn" type="submit">
+              <img src="\Icons\search.png" alt="" srcset="" />
+            </button>
+          </form>
         </div>
-      </nav>
-    </header>
-  </body>
+      </div>
+      <div class="nav-items" id="nav-item-2">
+        <div id="login-div">
+          <a href="">Login</a>
+        </div>
+        <div id="nav-more">
+          <span>
+            More
+          </span>
+          <div id="nav-more-dropdown">
+            <div class="drop-items">item1</div>
+            <div class="drop-items">item2</div>
+            <div class="drop-items">item3</div>
+            <div class="drop-items">item4</div>
+            <div class="drop-items">item5</div>
+            <div class="drop-items">item6</div>
+            <div class="drop-items">item7</div>
+            <div class="drop-items">item8</div>
+          </div>
+          <span>
+            <img src="\Icons\down-arrow.png" alt="">
+          </span>
+        </div>
+        <div id="nav-cart-div">
+          <span><img src="\Icons\grocery-store.png" alt="" srcset=""></span>
+          <span id="cart-text">Cart</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+</body>
+
 </html>

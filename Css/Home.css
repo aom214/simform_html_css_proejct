@@ -2,14 +2,22 @@
     padding:0px;
     margin:0px;
 }
+header{
+    background-color: #205DC0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 #navbar{
-    height:67.2px;
+    height:56px;
+    z-index: 1000;
     width:100vw;
     background-color: #205DC0;
     display:flex;
     align-items: center;
     justify-content: center;
-    gap:clamp(30px,10%,100px)
+    gap:clamp(30px,10%,100px);
+    /* max-width: 1600px; */
 }
 .nav-items{
     height:100%;
@@ -19,7 +27,7 @@
 }
 #nav-item-1{
     width:45%;
-    min-width: 600px
+    min-width: 560px
 }
 /* fir nav item styleing starts from here */
 .nav-logo-div{
@@ -33,9 +41,10 @@
     align-items: center;
     flex:1;
     gap:20px;
+    max-width: 430px;
 }
 .nav-search-div form{
-    height:50px;
+    height:53px;
     flex:1;
 }
 #nav-logo{
@@ -43,17 +52,24 @@
 }
 #nav-logo-link{
     display: block;
-    height:55%;
+    height:35px;
 }
 .nav-search-div .search-form input{
     flex:1;
     min-width:200px;
-    height:40px;
+    height:35px;
     width:70%;
     border:0px;
-    font-size:20px;
+    font-size:18px;
     padding-left: 10px;
     border-radius: 2px 0px 0px 2px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size:13px;
 }
 input[type="search"]::-webkit-search-cancel-button{
   -webkit-appearance: none;
@@ -71,11 +87,12 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 .nav-search-div .nav-search-btn{
     background-color: white;
+    cursor:pointer;
     border:0px;
     margin:0px;
     padding:0px;
     padding-right:10px;
-    height:40px;
+    height:35px;
     box-sizing:border-box;
     outline: 0px;
     display: flex;
@@ -83,7 +100,7 @@ input[type="search"]::-webkit-search-cancel-button{
     border-radius: 0px 2px 2px 0px;
 }
 .nav-search-btn img{
-    height:30px
+    height:26px
 }
 
 /* navbar-item-1 ends here */
@@ -91,11 +108,11 @@ input[type="search"]::-webkit-search-cancel-button{
 /* navbar-item-2 starts here */
 
 #nav-item-2{
-    background-color: yellow;
-    width:35%;
+    width:20%;
+    min-width:250px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 #nav-item-2 #login-div{
     height:30px;
@@ -106,6 +123,13 @@ input[type="search"]::-webkit-search-cancel-button{
     align-items: center;
     justify-content: center;
     border-radius: 3px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size:16px;
 }
 
 #nav-item-2 #login-div a{
@@ -113,3 +137,114 @@ input[type="search"]::-webkit-search-cancel-button{
     color:#205DC0;
     font-weight:500
 }
+
+#nav-item-2 #nav-more{
+    display: flex;
+    height:100%;
+    position: relative;
+    cursor:pointer;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size:16px;
+    gap:3px
+}
+
+#nav-item-2 #nav-more:hover #nav-more-dropdown{
+    display:flex
+}
+#nav-item-2 #nav-more #nav-more-dropdown:hover{
+    display:flex
+}
+#nav-item-2 #nav-more #nav-more-dropdown{
+    position:absolute;
+    z-index:9999;
+    background-color: white;
+    top:50px;
+    color:black;
+    display: none;
+    flex-direction: column;
+    height:300px;
+    justify-content: space-evenly;
+    width:280px;
+    box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+    align-items: center;
+    border-radius: 4px
+}
+#nav-item-2 #nav-more #nav-more-dropdown .drop-items{
+    width: 100%;
+    height:12%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+}
+#nav-item-2 #nav-more #nav-more-dropdown .drop-items:hover{
+    background-color: #C8C8C8;
+}
+
+#nav-item-2 #nav-more span{
+    display: inline-block;
+    height:40px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+#nav-item-2 #nav-more img:nth-child(1){
+    height:18px;
+}
+#nav-item-2 #nav-more img:nth-child(2){
+    height:10px;
+}
+#nav-cart-div img{
+    height: 20px
+}
+#nav-cart-div{
+    cursor:pointer;
+    color:white;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    font-size:16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsivess of navabr starts from here */
+
+

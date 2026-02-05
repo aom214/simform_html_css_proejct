@@ -452,10 +452,11 @@ main #books #books-item-1{
     width:100%;
     border-bottom:2px solid grey;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
     padding-left: 20px;
     box-sizing: border-box;
+    padding-right:20px
 }
 main #books #books-item-2{
     flex-grow: 1;
@@ -464,7 +465,7 @@ main #books #books-item-2{
 
 
 
-main #books #books-item-1 #bi1-1{
+main #books #books-item-1 #it1 #bi1-1{
     font-size: 22px;
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -472,6 +473,74 @@ main #books #books-item-1 #bi1-1{
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+
+main #books #books-item-1 #bi1-2{
+    color:grey
+}
+
+
+main #books #books-item-1 #it2 button{
+    height: 35px;
+    width: 80px;
+    background-color: #0074D9;
+    border: 0px;
+    color: white;
+    font-size: 10px;
+}
+
+
+main #books #books-item-2{
+    flex-grow: 1;
+    width:100%;
+    display: flex;
+    align-items: center;
+    overflow:auto;
+    scrollbar-width: none;
+    gap:10px;
+    box-sizing:border-box;
+    padding-left:20px
+}
+
+main #books #books-item-2 div{
+    width:250px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main #books #books-item-2 div .ditems2-text-1{
+    color:black;
+    font-weight: bold;
+    width:70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+main #books #books-item-2 div .ditems2-text-2{
+    color:green;
+    overflow: hidden;
+    flex-grow: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+main #books #books-item-2 div .ditems2-text-3{
+    color:grey;
+    overflow: hidden;
+    flex-grow: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#deals-of-day #deals-items-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* navabr item 1 */
 @media(max-width:1350px){

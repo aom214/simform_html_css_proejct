@@ -40,7 +40,14 @@ header{
     width:45%;
     min-width: 400px
 }
+
+
+
 /* fir nav item styleing starts from here */
+
+
+
+
 .nav-logo-div{
     height:100%;
     display: flex;
@@ -116,6 +123,12 @@ input[type="search"]::-webkit-search-cancel-button{
 }
 
 /* navbar-item-1 ends here */
+
+
+
+
+
+
 
 /* navbar-item-2 starts here */
 
@@ -240,6 +253,7 @@ input[type="search"]::-webkit-search-cancel-button{
 
 
 
+/* navbar item 2 completed here */
 
 
 
@@ -250,7 +264,8 @@ input[type="search"]::-webkit-search-cancel-button{
 
 
 
-/* styling main content:--- */
+
+/* main content starts here which includs 2 parts deals and  :--- */
 
 
 main{
@@ -314,7 +329,14 @@ main #main-category #category .category-items{
     width:20px
 }
 
-#main-category #category .category-items span #category-dropdown{
+
+
+
+/* My doubt of drop down starts from here */
+
+/* Have hight ligh dropdown with yellow color background */
+
+#main-category #category .category-items .dp{
     position:absolute;
     width:100px;
     height:100px;
@@ -324,12 +346,20 @@ main #main-category #category .category-items{
     display: none;
 }
 
+#main-category #category .category-items:hover .dp{
+    display: block;
+}
+
+
+
+/* Doubt of dropdown ends here */
 
 
 
 
 
-/* responsivess of navbar starts from here */
+
+/* deals section satrts from here */
 
 
 #deals-of-day{      
@@ -373,6 +403,9 @@ main #main-category #category .category-items{
     gap:2px;
     align-items: center;
 }
+
+
+
 #deals-of-day #deals-items-1 #item-header #item-header-item-1 span strong{
     font-size:22px;
     font-family: "Roboto", sans-serif;
@@ -388,6 +421,15 @@ main #main-category #category .category-items{
     height:100%;
     display: flex;
     align-items: center;
+    text-align: center;
+    font-size:22px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+    text-align: center;
 }
 #deals-of-day #deals-items-1 #item-header #item-header-item-2 button{
     margin-right: 20px;
@@ -397,7 +439,6 @@ main #main-category #category .category-items{
     border:0px;
     color:white;
     font-size:10px;
-    
 }
 
 #deals-of-day #deals-items-1 #item-footer{
@@ -430,12 +471,16 @@ main #main-category #category .category-items{
     justify-content: center;
     width:250px;
     flex-shrink: 0;
-    gap:10px
+    gap:10px;
+    text-align: center;
+    font-weight:300
 }
 
 #deals-of-day #deals-items-1 #item-footer .deals-item2 .ditems2-text-1{
     color:black;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 15px;
+    font-family: "inter_semi_bold",Arial,sans-serif;
     width:70%;
     white-space: nowrap;
     overflow: hidden;
@@ -467,6 +512,10 @@ main #main-category #category .category-items{
     width:90%
 }
 
+
+
+
+/* books section starts from here */
 
 main #books{
     margin-top: 20px;
@@ -502,7 +551,7 @@ main #books #books-item-2{
 
 main #books #books-item-1 #it1 #bi1-1{
     font-size: 22px;
-    font-family: "Roboto", sans-serif;
+    font-family: "inter_semi_bold",Arial,sans-serif;
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
@@ -543,6 +592,8 @@ main #books #books-item-2 div{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 10px;
+
 }
 
 main #books #books-item-2 div .ditems2-text-1{
@@ -577,7 +628,12 @@ main #books #books-item-2 div .ditems2-text-3{
 }
 
 
-/* navabr item 1 */
+/* Responsiveness starts here  */
+
+
+
+
+
 @media(max-width:1350px){
     #navbar{
     gap:10px;

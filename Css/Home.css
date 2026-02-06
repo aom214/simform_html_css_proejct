@@ -350,7 +350,9 @@ main #main-category #category .category-items{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
+
 
 #deals-of-day #deals-items-1 #item-header{
     height:60px;
@@ -394,7 +396,8 @@ main #main-category #category .category-items{
     background-color: #0074D9;
     border:0px;
     color:white;
-    font-size:10px
+    font-size:10px;
+    
 }
 
 #deals-of-day #deals-items-1 #item-footer{
@@ -404,7 +407,19 @@ main #main-category #category .category-items{
     height:290px;
     gap:20px;
     box-sizing: border-box;
-    box-sizing: border-box;
+    box-sizing: border-box
+}
+
+#deals-of-day #deals-items-1 #item-footer #deals-item-1-btn{
+    position: absolute;
+    height:100px;
+    width:50px;
+    background-color: white;
+    right:0px;
+    top:50%;
+    transform: translate(0,-50%);
+    border:0px;
+    box-shadow: 8px 8px 16px 8pX rgba(0,0,0,0.2);
 }
 
 
@@ -510,7 +525,7 @@ main #books #books-item-1 #it2 button{
 
 
 main #books #books-item-2{
-    flex-grow: 1;
+    flex-grow: 1;   
     width:100%;
     display: flex;
     align-items: center;
@@ -671,6 +686,15 @@ main #books #books-item-2 div .ditems2-text-3{
         min-width: 100px;
         width:40%;
     }
+    #deals-of-day #deals-items-1 #item-header #item-header-item-1 span strong {
+    font-size: 16px;}
+    main #books #books-item-1 #it1 #bi1-1 {
+    font-size: 16px;
+    }
+    #deals-of-day #deals-items-1 #item-header #item-header-item-1 span {
+    font-size:14px;
+}
+
 }
 @media(max-width:300px){
     #nav-item-2{
@@ -678,5 +702,20 @@ main #books #books-item-2 div .ditems2-text-3{
     }
     .nav-search-div .search-form input{
         min-width:0px;
+    }
+    #deals-of-day #deals-items-1 #item-header #item-header-item-1 span strong {
+    font-size: 12px;}
+    main #books #books-item-1 #it1 #bi1-1 {
+    font-size: 12px;
+    }
+    #deals-of-day #deals-items-1 #item-header #item-header-item-1 span {
+    font-size:0px;      
+    }
+    main #books #books-item-1 #bi1-2 {
+    font-size:0px
+    }
+    #deals-of-day #deals-items-1 #item-header #item-header-item-1 span img{
+        height: 0px;
+        width:0px
     }
 }
